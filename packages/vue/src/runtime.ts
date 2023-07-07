@@ -9,6 +9,7 @@ if (__DEV__) {
 
 export * from '@vue/runtime-dom'
 
+// 这个就是文档为什么说运行时不能使用编译选项的原因，https://cn.vuejs.org/api/application.html#app-config-compileroptions
 export const compile = () => {
   if (__DEV__) {
     warn(

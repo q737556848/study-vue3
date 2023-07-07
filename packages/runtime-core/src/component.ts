@@ -816,7 +816,7 @@ let installWithProxy: (i: ComponentInternalInstance) => void
 
 /**
  * For runtime-dom to register the compiler.
- * Note the exported method uses any to avoid d.ts relying on the compiler types.
+ * Note the exported method uses any to avoid d.ts relying on the compiler types. 这里说用any是为了避免死循环依赖
  */
 export function registerRuntimeCompiler(_compile: any) {
   compile = _compile

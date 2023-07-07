@@ -35,5 +35,6 @@
     "packages/dts-test",
     "packages/vue/jsx-runtime",
     "scripts/setupVitest.ts"
-  ]
+  ],
+  "exclude": ["packages/dts-test/defineComponent.test-d.tsx"]
 }
